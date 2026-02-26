@@ -1,0 +1,72 @@
+{
+  "projectType": "cli-tool",
+  "projectName": "Splat",
+  "projectDescription": "An AI-powered debugging CLI tool that analyzes compile/runtime errors and provides instant, contextual solutions using fast inference models.",
+  "theme": "aspen",
+  "primaryColor": "#FF6B6B",
+  "lightColor": "#FFE5E5",
+  "darkColor": "#CC3333",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": ["introduction", "installation", "quickstart"]
+          },
+          {
+            "group": "Core Concepts",
+            "pages": ["how-it-works", "relational-analysis", "ai-debugging"]
+          },
+          {
+            "group": "Usage",
+            "pages": ["commands/squash", "commands/flags", "commands/interactive-mode"]
+          },
+          {
+            "group": "Configuration",
+            "pages": ["configuration/api-keys", "configuration/gitignore"]
+          },
+          {
+            "group": "Advanced",
+            "pages": ["advanced/architecture", "advanced/agents", "advanced/file-writing"]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "CLI Commands",
+            "pages": ["api/cli", "api/squash", "api/interactive"]
+          },
+          {
+            "group": "Core Modules",
+            "pages": ["api/relational", "api/errortrace", "api/process"]
+          },
+          {
+            "group": "Utilities",
+            "pages": ["api/utils", "api/agents"]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "AI-powered error debugging with Groq inference",
+    "Git-aware context collection respecting .gitignore",
+    "Relational file analysis with -r flag for dependency tracking",
+    "Interactive terminal session management with tmux",
+    "Automatic code fix suggestions with file writing"
+  ],
+  "publicApiSurface": [
+    "splat squash <command>",
+    "splat squash -r <command>",
+    "Interactive shell: start, send, exit commands",
+    "relational_error_parsing_function()",
+    "parse_error_stack()",
+    "build_adjacency_list()",
+    "get_nth_related_files()",
+    "run_mock_repopack()"
+  ]
+}
