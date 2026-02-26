@@ -1,5 +1,6 @@
 {
   "projectType": "cli-tool",
+  "productType": "oss",
   "projectName": "Splat",
   "projectDescription": "An AI-powered debugging CLI tool that analyzes compile/runtime errors and provides instant, contextual solutions using fast inference models.",
   "theme": "aspen",
